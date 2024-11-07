@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Dream Home constructions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color:white;
+            background-color: #f4f4f4;
+        }
+        .contact-container {
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .logo img {
+            width: 60px;
+            height: auto;
+        }
+        .contact-title {
+            font-size: 1.5em;
+            margin: 
+            10px 0;
+        }
+        .office-details {
+            margin: 15px 0;
+            line-height: 1.5;
+        }
+        .contact-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            color: white;
+            background-color: black;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .contact-button:hover {
+            background-color: #333;
+        }
+        body {
+            background-image: url({% static 'C:\Users\LENOVO\Downloads\miniproject\dream_home\static\images\cont.jpg' %});
+            background-size: cover; /* To cover the whole area */
+            background-repeat: no-repeat; /* Prevents repetition */
+            height: 100vh; /* Full height */
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <div class="logo">
+
+        </div>
+        <h2 class="contact-title">CONTACT US</h2>
+
+        <div class="office-details">
+            <strong>CORPORATE OFFICE</strong><br>
+            Dream Home  Engineers & Builders<br>
+            Near Railway Gate, East Nada, Guruvayur,<br>
+            Thrissur District, Kerala, Pin: 680 101
+        </div>
+
+        <div class="office-details">
+            <strong>THRISSUR OFFICE:</strong><br>
+            Salim Associates<br>
+            (A  Dream Home Constructions Company)<br>
+            Nandanam Plaza, M.G. Road,<br>
+            Thrissur, Kerala, India, Pin: 680004
+        </div>
+
+        <div class="office-details">
+            <strong>CALL / WHATSAPP</strong> +91 9846 500 900<br>
+            E-mail: arunimanikulesan7076@gmail.com<br>
+            <a href="http://www.Dreamhomeconstructions.com">www.Dream Home constructions.com</a>
+        </div>
+
+        <a href="index" class="contact-button">Back Home</a>
+    </div>
+</body>
+</html>

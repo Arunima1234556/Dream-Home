@@ -1,0 +1,136 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Building Construction Project</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        background-image: url({% static 'C:\Users\LENOVO\Downloads\miniproject\dream_home\static\images\about1.jpg' %});
+        background-size: cover; /* To cover the whole area */
+        background-repeat: no-repeat; /* Prevents repetition */
+        height: 100vh; /* Full height */
+    }
+
+    
+    .content {
+        position: relative;
+        font-size:20px;
+        z-index: 2; /* Make sure content is above the overlay */
+        color: black; /* Change text color for visibility */
+    }
+    #teams {
+        background-color: rgba(255, 255, 255, 0.9); /* White background with some transparency */
+        border: 1px solid #ccc; /* Light gray border */
+        border-radius: 8px; /* Rounded corners */
+        padding: 20px; /* Inner spacing */
+        margin: 20px auto; /* Center the box with some margin */
+        max-width: 600px; /* Set a maximum width for the box */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    }
+    
+    .team-member {
+        margin-bottom: 15px; /* Spacing between team members */
+    }
+    
+    .team-member h3 {
+        margin: 0; /* Remove default margin for headings */
+    }
+    
+    .team-member p {
+        margin: 5px 0; /* Adjust margin for paragraphs */
+    }
+    .menu {
+        background-color: #333;
+        overflow: hidden;
+    }
+    .menu a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 24px 20px;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    .menu a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+</style>
+<body>
+    
+    <div class="menu">
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#"><img src="{% static 'images/search-icon.png' %}" alt="Search Icon"></a>
+    </div>
+    <div class="content">  
+        <div class="header_section">
+            <div>
+               <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+                 
+                     <div class="search_icon">
+                        <a href="#"><img src="{% static 'images/search-icon.png' %}" alt="Search Icon"></a>
+                     </div>
+                  </div>
+               </nav>
+            </div>
+         </div>
+    <main>
+        <section id="teams">
+        <section id="mission">
+            <h2>Our Mission</h2>
+            <p>At [Dream Home Constructions], our mission is to deliver high-quality construction services that exceed our clients' expectations.</p>
+        </section>
+
+        <section id="vision">
+            <h2>Our Vision</h2>
+            <p>To be a leader in the construction industry, recognized for our commitment to sustainability, innovation, and quality.</p>
+        </section>
+
+        <section id="values">
+            <h2>Our Values</h2>
+            <ul>
+                <li>Integrity</li>
+                <li>Quality</li>
+                <li>Safety</li>
+                <li>Innovation</li>
+            </ul>
+        </section>
+
+        <section id="team">
+    
+            <h2>Meet Our Team</h2>
+            <div class="team-member">
+                <h3>Arunima</h3>
+                <p>Founder & CEO</p>
+                <p>With over 20 years in the construction industry,Akash  leads our team with a commitment to excellence.</p>
+            </div>
+            <div class="team-member">
+                <h3>Devi krishna</h3>
+                <p>Project Manager</p>
+                <p>Devi krishna oversees our projects, ensuring they are completed on time and within budget.</p>
+            </div>
+       
+        </section>
+
+        <section id="why-choose-us">
+            <h2>Why Choose Us</h2>
+            <p>We combine experience, a skilled workforce, and a passion for building to deliver projects that stand the test of time. Your vision is our blueprint!</p>
+        </section>
+    </main>
+</section>
+    
+</div>
+</body>
+</html>
